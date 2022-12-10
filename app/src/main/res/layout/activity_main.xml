@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutConstrainPrincipal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layoutLinear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableLayout
+            android:id="@+id/layoutTable"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="match_parent"
+                android:layout_height="53dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layoutConstrain1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img_viewLogo"
+                        android:layout_width="339dp"
+                        android:layout_height="44dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/looogo" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layoutConstrain2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img_view2"
+                        android:layout_width="85dp"
+                        android:layout_height="104dp"
+                        android:scaleY="1.6"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.062"
+                        app:srcCompat="@drawable/cubo" />
+
+                    <TextView
+                        android:id="@+id/txt_viewTitle2"
+                        android:layout_width="243dp"
+                        android:layout_height="33dp"
+                        android:layout_marginStart="8dp"
+                        android:background="#00D63F"
+                        android:fontFamily="@font/audiowide"
+                        android:text="CANCHAS SINTETICAS EL CUBO"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/img_view2"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/btn_ver2"
+                        android:layout_width="55dp"
+                        android:layout_height="33dp"
+                        android:layout_marginStart="126dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="52dp"
+                        android:backgroundTint="#22B14C"
+                        android:onClick="VER_cubo"
+                        android:text="VER"
+                        android:textSize="10sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/txt_viewInfo2"
+                        app:layout_constraintTop_toTopOf="@+id/txt_viewInfo2" />
+
+                    <RatingBar
+                        android:id="@+id/ratingBar2"
+                        style="@android:style/Widget.Holo.Light.RatingBar.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="44dp"
+                        android:numStars="5"
+                        android:rating="4"
+                        app:layout_constraintBottom_toBottomOf="@+id/txt_viewInfo2"
+                        app:layout_constraintEnd_toEndOf="@+id/btn_ver2"
+                        app:layout_constraintHorizontal_bias="0.56"
+                        app:layout_constraintStart_toStartOf="@+id/txt_viewInfo2"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_viewTitle2"
+                        app:layout_constraintVertical_bias="0.083" />
+
+                    <TextView
+                        android:id="@+id/txt_viewInfo2"
+                        android:layout_width="241dp"
+                        android:layout_height="69dp"
+                        android:background="#17534C4C"
+                        android:backgroundTint="#00D63F"
+                        android:fontFamily="@font/audiowide"
+                        android:text="\nCanchas: 4 \nDireccion: Cl. 18 Nte. # 12-143 \nValoracion:"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/txt_viewTitle2"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_viewTitle2" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layoutConstrain3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img_view3"
+                        android:layout_width="85dp"
+                        android:layout_height="104dp"
+                        android:scaleY="2"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.062"
+                        app:srcCompat="@drawable/bombonera" />
+
+                    <TextView
+                        android:id="@+id/txt_viewTitle3"
+                        android:layout_width="249dp"
+                        android:layout_height="34dp"
+                        android:layout_marginStart="4dp"
+                        android:background="#00D63F"
+                        android:fontFamily="@font/audiowide"
+                        android:text="CANCHAS SINTETICAS LA BOMBONERA"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/img_view3"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/btn_ver3"
+                        android:layout_width="55dp"
+                        android:layout_height="33dp"
+                        android:layout_marginStart="126dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="52dp"
+                        android:backgroundTint="#22B14C"
+                        android:onClick="Ver_bombo"
+                        android:text="VER"
+                        android:textSize="10sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/txt_viewInfo3"
+                        app:layout_constraintTop_toTopOf="@+id/txt_viewInfo3" />
+
+                    <RatingBar
+                        android:id="@+id/ratingBar3"
+                        style="@android:style/Widget.Holo.Light.RatingBar.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="44dp"
+                        android:numStars="5"
+                        android:rating="4"
+                        app:layout_constraintBottom_toBottomOf="@+id/txt_viewInfo3"
+                        app:layout_constraintEnd_toEndOf="@+id/btn_ver3"
+                        app:layout_constraintHorizontal_bias="0.56"
+                        app:layout_constraintStart_toStartOf="@+id/txt_viewInfo3"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_viewTitle3"
+                        app:layout_constraintVertical_bias="0.083" />
+
+                    <TextView
+                        android:id="@+id/txt_viewInfo3"
+                        android:layout_width="247dp"
+                        android:layout_height="75dp"
+                        android:background="#17534C4C"
+                        android:backgroundTint="#00D63F"
+                        android:fontFamily="@font/audiowide"
+                        android:text="\nCanchas: 6 \nDireccion:  Cra. 9 Nte. #4a-56 \nValoracion:"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/txt_viewTitle3"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_viewTitle3" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layoutConstrain4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img_view1"
+                        android:layout_width="85dp"
+                        android:layout_height="104dp"
+                        android:scaleY="1.6"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.062"
+                        app:srcCompat="@drawable/kopana" />
+
+                    <TextView
+                        android:id="@+id/txt_viewTitle1"
+                        android:layout_width="249dp"
+                        android:layout_height="34dp"
+                        android:layout_marginStart="4dp"
+                        android:background="#00D63F"
+                        android:fontFamily="@font/audiowide"
+                        android:text="CANCHAS SINTETICAS KOPANA"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/img_view1"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/idkopana"
+                        android:layout_width="55dp"
+                        android:layout_height="33dp"
+                        android:layout_marginStart="126dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="52dp"
+                        android:backgroundTint="#22B14C"
+                        android:onClick="Ver_kopana"
+                        android:text="VER"
+                        android:textSize="10sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/txt_viewInfo1"
+                        app:layout_constraintTop_toTopOf="@+id/txt_viewInfo1" />
+
+                    <RatingBar
+                        android:id="@+id/ratingBar1"
+                        style="@android:style/Widget.Holo.Light.RatingBar.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="44dp"
+                        android:numStars="5"
+                        android:rating="4"
+                        app:layout_constraintBottom_toBottomOf="@+id/txt_viewInfo1"
+                        app:layout_constraintEnd_toEndOf="@+id/idkopana"
+                        app:layout_constraintHorizontal_bias="0.56"
+                        app:layout_constraintStart_toStartOf="@+id/txt_viewInfo1"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_viewTitle1"
+                        app:layout_constraintVertical_bias="0.083" />
+
+                    <TextView
+                        android:id="@+id/txt_viewInfo1"
+                        android:layout_width="247dp"
+                        android:layout_height="75dp"
+                        android:background="#17534C4C"
+                        android:backgroundTint="#00D63F"
+                        android:fontFamily="@font/audiowide"
+                        android:text="\nCanchas: 4 \nDireccion: Cra. 9 #31 norte -97\nValoracion:"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.666"
+                        app:layout_constraintStart_toStartOf="@+id/txt_viewTitle1"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_viewTitle1" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layoutConstrain5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img_view5"
+                        android:layout_width="85dp"
+                        android:layout_height="104dp"
+                        android:scaleY="1.9"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.062"
+                        app:srcCompat="@drawable/maracana" />
+
+                    <TextView
+                        android:id="@+id/txt_viewTitle5"
+                        android:layout_width="249dp"
+                        android:layout_height="34dp"
+                        android:layout_marginStart="4dp"
+                        android:background="#00D63F"
+                        android:fontFamily="@font/audiowide"
+                        android:text="CANCHAS SINTETICAS MARACANÁ"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/img_view5"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/btn_ver5"
+                        android:layout_width="55dp"
+                        android:layout_height="33dp"
+                        android:layout_marginStart="126dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="52dp"
+                        android:backgroundTint="#22B14C"
+                        android:onClick="Ver_maracana"
+                        android:text="VER"
+                        android:textSize="10sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/txt_viewInfo5"
+                        app:layout_constraintTop_toTopOf="@+id/txt_viewInfo5" />
+
+                    <RatingBar
+                        android:id="@+id/ratingBar5"
+                        style="@android:style/Widget.Holo.Light.RatingBar.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="44dp"
+                        android:numStars="5"
+                        android:rating="4"
+                        app:layout_constraintBottom_toBottomOf="@+id/txt_viewInfo5"
+                        app:layout_constraintEnd_toEndOf="@+id/btn_ver5"
+                        app:layout_constraintHorizontal_bias="0.56"
+                        app:layout_constraintStart_toStartOf="@+id/txt_viewInfo5"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_viewTitle5"
+                        app:layout_constraintVertical_bias="0.083" />
+
+                    <TextView
+                        android:id="@+id/txt_viewInfo5"
+                        android:layout_width="247dp"
+                        android:layout_height="75dp"
+                        android:background="#17534C4C"
+                        android:backgroundTint="#00D63F"
+                        android:fontFamily="@font/audiowide"
+                        android:text="\nCanchas: 3 \nDireccion: Calle 10 #1-2\nValoracion:"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/txt_viewTitle5"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_viewTitle5" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layoutConstrain6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img_view6"
+                        android:layout_width="85dp"
+                        android:layout_height="104dp"
+                        android:scaleY="1.8"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.062"
+                        app:srcCompat="@drawable/estancia" />
+
+                    <TextView
+                        android:id="@+id/txt_viewTitle6"
+                        android:layout_width="249dp"
+                        android:layout_height="34dp"
+                        android:layout_marginStart="4dp"
+                        android:background="#00D63F"
+                        android:fontFamily="@font/audiowide"
+                        android:text="CANCHAS SINTETICAS LA ESTANCIA"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/img_view6"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/btn_ver6"
+                        android:layout_width="55dp"
+                        android:layout_height="33dp"
+                        android:layout_marginStart="126dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="52dp"
+                        android:backgroundTint="#22B14C"
+                        android:onClick="Ver_estancia"
+                        android:text="VER"
+                        android:textSize="10sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/txt_viewInfo6"
+                        app:layout_constraintTop_toTopOf="@+id/txt_viewInfo6" />
+
+                    <RatingBar
+                        android:id="@+id/ratingBar6"
+                        style="@android:style/Widget.Holo.Light.RatingBar.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="44dp"
+                        android:numStars="5"
+                        android:rating="4"
+                        app:layout_constraintBottom_toBottomOf="@+id/txt_viewInfo6"
+                        app:layout_constraintEnd_toEndOf="@+id/btn_ver6"
+                        app:layout_constraintHorizontal_bias="0.56"
+                        app:layout_constraintStart_toStartOf="@+id/txt_viewInfo6"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_viewTitle6"
+                        app:layout_constraintVertical_bias="0.083" />
+
+                    <TextView
+                        android:id="@+id/txt_viewInfo6"
+                        android:layout_width="247dp"
+                        android:layout_height="75dp"
+                        android:background="#17534C4C"
+                        android:backgroundTint="#00D63F"
+                        android:fontFamily="@font/audiowide"
+                        android:text="\nCanchas: 8 \nDireccion: Calle 5 #6B \nValoracion:"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/txt_viewTitle6"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_viewTitle6" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="loggin"
+                        android:text="login" />
+
+                    <Button
+                        android:id="@+id/button5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="registrarse"
+                        android:text="Button" />
+                </LinearLayout>
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

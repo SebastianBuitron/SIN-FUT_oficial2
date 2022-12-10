@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "917469241652",
+    "project_id": "sin-fut-oficial2-a5514",
+    "storage_bucket": "sin-fut-oficial2-a5514.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:917469241652:android:63db3bf5a29ff85f0c4561",
+        "android_client_info": {
+          "package_name": "com.example.sin_fut_oficial2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "917469241652-jo6hgo9fcg2nbkj3mf4tl5cla04if2l6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0uDuPde_P_F5TCtktHW1xVsE7ORwpOdo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "917469241652-jo6hgo9fcg2nbkj3mf4tl5cla04if2l6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
