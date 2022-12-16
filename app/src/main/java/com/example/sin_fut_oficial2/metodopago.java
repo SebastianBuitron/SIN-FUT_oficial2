@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -34,7 +35,20 @@ public class metodopago extends AppCompatActivity {
             case R.id.paypal:transaction.replace(R.id.fragmentinicio, fragment_paypal);
                 transaction.addToBackStack(null);
                 break;
+
         }
         transaction.commit();
     }
+    public void Ver_chat(View view) {
+
+        Intent ver = new Intent(this, chat.class);
+
+    }
+    public void prueba (View view) {
+
+        Intent ver = new Intent(this, chat.class);
+        startActivity(ver);
+
+    }
+
 }
