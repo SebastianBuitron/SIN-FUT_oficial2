@@ -2,7 +2,9 @@ package com.example.sin_fut_oficial2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.ViewFlipper;
 
@@ -33,6 +35,12 @@ public class el_cubo extends AppCompatActivity  {
         g_cubo.setInAnimation(this, android.R.anim.slide_out_right);
         g_cubo.setOutAnimation(this, android.R.anim.slide_out_right);
 
+
+    }
+    public void Ver_metodopago(View view) {
+
+        Intent ver = new Intent(this, metodopago.class);
+        startActivity(ver);
 
     }
 
