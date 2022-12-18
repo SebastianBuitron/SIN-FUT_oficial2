@@ -6,10 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".metodopago">
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="416dp"
+        android:layout_height="87dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/looogo" />
+
     <FrameLayout
         android:id="@+id/fragmentinicio"
-        android:layout_width="399dp"
-        android:layout_height="599dp"
+        android:layout_width="407dp"
+        android:layout_height="548dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="2dp"
         app:layout_constraintBottom_toBottomOf="parent"
