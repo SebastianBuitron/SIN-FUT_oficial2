@@ -11,8 +11,14 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/solologo" />
+
         <EditText
-            android:id="@+id/correo1"
+            android:id="@+id/correoelectronico"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -20,7 +26,7 @@
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/contraseña1"
+            android:id="@+id/contrasena1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -31,6 +37,7 @@
             android:id="@+id/btn_login1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#067527"
             android:text="iniciar sesion" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

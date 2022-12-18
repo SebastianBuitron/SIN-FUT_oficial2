@@ -19,21 +19,21 @@ import org.checkerframework.checker.nullness.qual.NonNull;
 
 public class loggin extends AppCompatActivity {
     Button btn_login;
-    EditText correo, contraseña;
+    EditText correoo, contrasena;
     FirebaseAuth miAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_loggin);
         miAuth = FirebaseAuth.getInstance();
-        correo.findViewById(R.id.correo1);
-        contraseña.findViewById(R.id.contraseña1);
+        correoo.findViewById(R.id.correoelectronico);
+        contrasena.findViewById(R.id.contrasena1);
         btn_login.findViewById(R.id.btn_login1);
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String emailUser = correo.getText().toString().trim();
-                String passUser = contraseña.getText().toString().trim();
+                String emailUser = correoo.getText().toString().trim();
+                String passUser = contrasena.getText().toString().trim();
                 if (emailUser.isEmpty() && passUser.isEmpty()){
                     Toast.makeText(loggin.this, "ingresar los datos", Toast.LENGTH_SHORT).show();
                 }else {
@@ -64,4 +64,6 @@ public class loggin extends AppCompatActivity {
             }
         });
     }
+
+
 }

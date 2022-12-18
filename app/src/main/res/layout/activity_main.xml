@@ -476,27 +476,42 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" >
 
-                <LinearLayout
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:layout_height="match_parent">
 
                     <Button
                         android:id="@+id/button4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="154dp"
+                        android:layout_height="51dp"
+                        android:layout_marginTop="1dp"
                         android:layout_weight="1"
+                        android:backgroundTint="#22B14C"
+                        android:fontFamily="@font/audiowide"
                         android:onClick="loggin"
-                        android:text="login" />
+                        android:text="login"
+                        android:textColor="#000000"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
                     <Button
                         android:id="@+id/button5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="171dp"
+                        android:layout_height="55dp"
+                        android:layout_marginStart="14dp"
                         android:layout_weight="1"
+                        android:backgroundTint="#22B14C"
+                        android:fontFamily="@font/audiowide"
                         android:onClick="registrarse"
-                        android:text="Button" />
-                </LinearLayout>
+                        android:text="REGISTRARSE"
+                        android:textColor="#000000"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/button4"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
             </TableRow>
 
         </TableLayout>

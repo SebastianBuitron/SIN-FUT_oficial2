@@ -34,8 +34,8 @@ public class logginNewAccount extends AppCompatActivity {
         setContentView(R.layout.activity_loggin_new_account);
 
         nombre = findViewById(R.id.nombre);
-        correo = findViewById(R.id.correo1);
-        contraseña = findViewById(R.id.contraseña1);
+        correo = findViewById(R.id.correoelectronico);
+        contraseña = findViewById(R.id.contrasena1);
         btn_registrar = findViewById(R.id.btn_registrar);
         mFirestore = FirebaseFirestore.getInstance();
         mAuth = FirebaseAuth.getInstance();
