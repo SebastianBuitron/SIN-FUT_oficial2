@@ -26,9 +26,9 @@ public class loggin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_loggin);
         miAuth = FirebaseAuth.getInstance();
-        correoo.findViewById(R.id.correoelectronico);
-        contrasena.findViewById(R.id.contrasena1);
-        btn_login.findViewById(R.id.btn_login1);
+        correoo = findViewById(R.id.correoelectronico);
+        contrasena = findViewById(R.id.contrasena1);
+        btn_login = findViewById(R.id.btn_login1);
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

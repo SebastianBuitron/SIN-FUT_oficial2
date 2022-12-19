@@ -47,7 +47,7 @@ public class chat extends AppCompatActivity {
         rvMensajes.setAdapter(mAdapterRvme);
         rvMensajes.setHasFixedSize(true);
 
-        FirebaseFirestore.getInstance().collection( "char").addSnapshotListener(new EventListener<QuerySnapshot>() {
+        FirebaseFirestore.getInstance().collection( "chat").addSnapshotListener(new EventListener<QuerySnapshot>() {
             @Override
             public void onEvent(@Nullable QuerySnapshot queryDocumentSnapshots, @Nullable FirebaseFirestoreException error) {
                 for (DocumentChange documentChange : queryDocumentSnapshots.getDocumentChanges()){

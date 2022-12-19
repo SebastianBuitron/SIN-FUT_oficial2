@@ -26,6 +26,8 @@ public class adapterRvme extends RecyclerView.Adapter<adapterRvme.MensajeHolder>
 
     @Override
     public void onBindViewHolder(@NonNull MensajeHolder holder, int position) {
+        //System.out.println("tvName " + holder.tvName);
+        //System.out.println("tvMessage " + holder.tvMessage);
         holder.tvName.setText(lstMensajes.get(position).getName());
         holder.tvMessage.setText(lstMensajes.get(position).getMessage());
     }
@@ -41,7 +43,7 @@ public class adapterRvme extends RecyclerView.Adapter<adapterRvme.MensajeHolder>
         public MensajeHolder(@NonNull View itemView) {
             super(itemView);
             tvName =itemView.findViewById(R.id.tvName);
-            tvName =itemView.findViewById(R.id.tvMessage);
+            tvMessage =itemView.findViewById(R.id.tvMessage);
         }
     }
 }
